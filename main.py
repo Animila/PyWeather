@@ -3,8 +3,7 @@ from PyQt5 import uic
 
 import sys
 
-from setting import api_key
-from processData import getApi
+from processData import getWeather
 
 
 class WeatherWindows(QMainWindow):
@@ -13,7 +12,7 @@ class WeatherWindows(QMainWindow):
         super().__init__()
         uic.loadUi('5.ui', self)
 
-        self.data = getApi('Якутск', api_key)
+        self.data = getWeather('Якутск')
         self.setState()
 
     def setState(self):

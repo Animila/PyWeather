@@ -2,6 +2,8 @@ import requests
 from pprint import pprint
 from datetime import datetime
 
+from setting import api_key
+
 week = {
     0: 'понедельник',
     1: 'вторник',
@@ -28,20 +30,20 @@ month = {
 }
 
 
-def getApi(city, key):
+def getApi(city):
     """Получение данных погоды"""
-    parameters = {'q': city, 'lang': 'ru', 'appid': key, 'units': 'metric'}
+    parameters = {'q': city, 'lang': 'ru', 'appid': api_key, 'units': 'metric'}
     url = f'https://api.openweathermap.org/data/2.5/weather'
     try:
         api_result = requests.get(url, params=parameters).json()
     except Exception as message:
         print(f'Ошибка: {message}. Проверьте введенные данные')
     else:
-        pprint(getWeather(api_result))
-        return getWeather(api_result)
+        return api_result
 
 
-def getWeather(api_result):
+def getWeather(city):
+    api_result = getApi(city)
     """Парсинг данных"""
     return {
             'city': api_result["name"],

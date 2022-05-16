@@ -152,7 +152,7 @@ color: rgb(255, 255, 255);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>C:/Users/портнягина алина/Downloads/sun.png</pixmap>
+     <pixmap>sun.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="label">

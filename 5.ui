@@ -51,7 +51,7 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="font">
      <font>
-      <family>Dubai Medium</family>
+      <family>Comic Sans MS</family>
       <pointsize>13</pointsize>
      </font>
     </property>
@@ -65,15 +65,15 @@ color: rgb(255, 255, 255);</string>
    <widget class="QLabel" name="weather">
     <property name="geometry">
      <rect>
-      <x>150</x>
+      <x>180</x>
       <y>330</y>
-      <width>181</width>
+      <width>111</width>
       <height>51</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Dubai Medium</family>
+      <family>Futura Md BT</family>
       <pointsize>13</pointsize>
       <underline>false</underline>
       <strikeout>false</strikeout>
@@ -88,6 +88,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QLabel" name="gradus">

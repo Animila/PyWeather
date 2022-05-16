@@ -39,11 +39,14 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>05:00</string>
     </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
    </widget>
    <widget class="QLabel" name="week">
     <property name="geometry">
      <rect>
-      <x>200</x>
+      <x>180</x>
       <y>10</y>
       <width>141</width>
       <height>21</height>
@@ -51,7 +54,7 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="font">
      <font>
-      <family>Comic Sans MS</family>
+      <family>Dubai Medium</family>
       <pointsize>13</pointsize>
      </font>
     </property>
@@ -60,6 +63,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>Понедельник</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
    <widget class="QLabel" name="weather">
@@ -73,7 +79,7 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="font">
      <font>
-      <family>Futura Md BT</family>
+      <family>Dubai Medium</family>
       <pointsize>13</pointsize>
       <underline>false</underline>
       <strikeout>false</strikeout>
@@ -115,11 +121,14 @@ color: rgb(255, 255, 255);</string>
     <property name="text">
      <string>-10</string>
     </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
    </widget>
    <widget class="QLabel" name="gorod">
     <property name="geometry">
      <rect>
-      <x>140</x>
+      <x>120</x>
       <y>110</y>
       <width>91</width>
       <height>21</height>
@@ -137,6 +146,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>Якутск</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
    <widget class="QLabel" name="photo">
@@ -176,6 +188,12 @@ color: rgb(255, 255, 255);</string>
     <property name="pixmap">
      <pixmap>C:/Users/портнягина алина/Downloads/Py (2).png</pixmap>
     </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
@@ -207,7 +225,7 @@ border-width: 1.5px;
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>30</x>
+      <x>10</x>
       <y>10</y>
       <width>101</width>
       <height>21</height>
@@ -224,6 +242,9 @@ border-width: 1.5px;
     </property>
     <property name="text">
      <string>Апр 26</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
   </widget>

@@ -141,8 +141,8 @@ color: rgb(255, 255, 255);</string>
      <rect>
       <x>90</x>
       <y>150</y>
-      <width>151</width>
-      <height>141</height>
+      <width>150</width>
+      <height>150</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -152,7 +152,7 @@ color: rgb(255, 255, 255);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>drop.png</pixmap>
+     <pixmap>C:/Users/портнягина алина/Downloads/sun.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="label">

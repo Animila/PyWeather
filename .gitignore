@@ -2,6 +2,11 @@
 __pycache__/
 *.py[cod]
 
+# IntellijIdea files
+*.iml
+.idea
+out
+
 # C extensions
 *.so
 

@@ -33,7 +33,8 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: None;</string>
+     <string notr="true">background-color: None;
+color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>05:00</string>
@@ -74,10 +75,13 @@
      <font>
       <family>Dubai Medium</family>
       <pointsize>20</pointsize>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: None;</string>
+     <string notr="true">background-color: None;
+color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>Дождь</string>
@@ -99,7 +103,8 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: None;</string>
+     <string notr="true">background-color: None;
+color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>-10</string>
@@ -121,7 +126,8 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: None;</string>
+     <string notr="true">background-color: None;
+color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>Якутск</string>

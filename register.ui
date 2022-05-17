@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>382</width>
-    <height>349</height>
+    <height>343</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -39,7 +39,8 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: None;</string>
+     <string notr="true">background-color: None;
+color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>Регистрация</string>
@@ -75,14 +76,18 @@
     <property name="font">
      <font>
       <family>Dubai Medium</family>
-      <pointsize>20</pointsize>
+      <pointsize>15</pointsize>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: None;</string>
+     <string notr="true">background-color: None;
+color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>Логин</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
    <widget class="QTextEdit" name="password">
@@ -112,20 +117,24 @@
     <property name="font">
      <font>
       <family>Dubai Medium</family>
-      <pointsize>20</pointsize>
+      <pointsize>15</pointsize>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: None;</string>
+     <string notr="true">background-color: None;
+color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>Пароль</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
    <widget class="QPushButton" name="check">
     <property name="geometry">
      <rect>
-      <x>120</x>
+      <x>70</x>
       <y>280</y>
       <width>121</width>
       <height>41</height>
@@ -179,14 +188,18 @@ border-width: 1.5px;
     <property name="font">
      <font>
       <family>Dubai Medium</family>
-      <pointsize>20</pointsize>
+      <pointsize>15</pointsize>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: None;</string>
+     <string notr="true">background-color: None;
+color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>Город</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
    <widget class="QLabel" name="label_5">
@@ -201,14 +214,18 @@ border-width: 1.5px;
     <property name="font">
      <font>
       <family>Dubai Medium</family>
-      <pointsize>20</pointsize>
+      <pointsize>15</pointsize>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: None;</string>
+     <string notr="true">background-color: None;
+color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>Имя</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
    <widget class="QTextEdit" name="name">
@@ -224,6 +241,33 @@ border-width: 1.5px;
      <font>
       <pointsize>20</pointsize>
      </font>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="check_2">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>290</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Dubai Medium</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+color: rgb(0, 0, 0);
+border-radius: 15px;
+border-style: outset;
+border-width: 1.5px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Войти</string>
     </property>
    </widget>
   </widget>

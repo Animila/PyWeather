@@ -20,7 +20,7 @@
    <property name="geometry">
     <rect>
      <x>60</x>
-     <y>20</y>
+     <y>40</y>
      <width>71</width>
      <height>31</height>
     </rect>
@@ -32,17 +32,21 @@
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: None;</string>
+    <string notr="true">background-color: None;
+color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>Имя</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
      <x>60</x>
-     <y>60</y>
+     <y>80</y>
      <width>71</width>
      <height>31</height>
     </rect>
@@ -54,17 +58,21 @@
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: None;</string>
+    <string notr="true">background-color: None;
+color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>Логин</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
   <widget class="QLabel" name="label_3">
    <property name="geometry">
     <rect>
      <x>60</x>
-     <y>100</y>
+     <y>120</y>
      <width>71</width>
      <height>31</height>
     </rect>
@@ -76,17 +84,21 @@
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: None;</string>
+    <string notr="true">background-color: None;
+color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>Пароль</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
      <x>60</x>
-     <y>140</y>
+     <y>160</y>
      <width>71</width>
      <height>31</height>
     </rect>
@@ -98,17 +110,21 @@
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: None;</string>
+    <string notr="true">background-color: None;
+color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>Город</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
   <widget class="QComboBox" name="city">
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>141</y>
+     <y>161</y>
      <width>261</width>
      <height>31</height>
     </rect>
@@ -126,7 +142,7 @@
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>100</y>
+     <y>120</y>
      <width>261</width>
      <height>31</height>
     </rect>
@@ -144,7 +160,7 @@
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>60</y>
+     <y>80</y>
      <width>261</width>
      <height>31</height>
     </rect>
@@ -162,7 +178,7 @@
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>20</y>
+     <y>40</y>
      <width>261</width>
      <height>31</height>
     </rect>

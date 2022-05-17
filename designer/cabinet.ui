@@ -82,6 +82,12 @@ background-color: rgb(255, 255, 255);</string>
      <height>41</height>
     </rect>
    </property>
+   <property name="maximumSize">
+    <size>
+     <width>261</width>
+     <height>41</height>
+    </size>
+   </property>
    <property name="font">
     <font>
      <pointsize>15</pointsize>

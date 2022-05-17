@@ -10,14 +10,30 @@
     <height>483</height>
    </rect>
   </property>
+  <property name="maximumSize">
+   <size>
+    <width>333</width>
+    <height>483</height>
+   </size>
+  </property>
   <property name="cursor">
    <cursorShape>ArrowCursor</cursorShape>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Добрый день</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../image/Py (1).png</normaloff>../image/Py (1).png</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: qconicalgradient(cx:1, cy:1, angle:0, stop:0 rgba(0, 131, 214, 255), stop:0.0397727 rgba(54, 156, 228, 255), stop:0.965909 rgba(173, 255, 207, 255), stop:0.971591 rgba(149, 255, 200, 255), stop:1 rgba(255, 255, 255, 255));</string>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>100</width>
+    <height>53</height>
+   </size>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="time">
@@ -176,9 +192,9 @@ color: rgb(255, 255, 255);</string>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>450</y>
-      <width>61</width>
+      <x>240</x>
+      <y>430</y>
+      <width>91</width>
       <height>31</height>
      </rect>
     </property>
@@ -189,13 +205,16 @@ color: rgb(255, 255, 255);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../портнягина алина/Downloads/Py (2).png</pixmap>
+     <pixmap>../image/Py (1).png</pixmap>
     </property>
     <property name="scaledContents">
-     <bool>false</bool>
+     <bool>true</bool>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton">
@@ -277,18 +296,24 @@ border-width: 1.5px;
     <property name="title">
      <string>Профиль</string>
     </property>
-    <addaction name="action"/>
+    <addaction name="menuRef"/>
+    <addaction name="menuExit"/>
    </widget>
    <addaction name="menu"/>
   </widget>
-  <action name="action">
+  <action name="menuRef">
    <property name="text">
     <string>Редактировать</string>
    </property>
   </action>
+  <action name="menuExit">
+   <property name="text">
+    <string>Выйти</string>
+   </property>
+  </action>
  </widget>
  <resources>
-  <include location="bg.qrc"/>
+  <include location="../image/bg.qrc"/>
  </resources>
  <connections/>
 </ui>

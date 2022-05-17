@@ -1,7 +1,7 @@
 from datetime import datetime
 import requests
 
-from setting import api_key
+from files.setting import api_key
 
 week = {
     0: 'понедельник',
@@ -46,6 +46,7 @@ def getWeather(city):
     """Парсинг данных"""
     return {
             'city': api_result["name"],
+            'image': api_result['weather'][0]['icon'],
             'descr': api_result['weather'][0]['description'],
             'temp': round(api_result['main']['temp']),
             'humidity': api_result['main']['humidity'],

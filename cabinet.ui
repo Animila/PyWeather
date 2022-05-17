@@ -6,12 +6,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>449</width>
-    <height>300</height>
+    <width>463</width>
+    <height>283</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Личный кабинет</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qconicalgradient(cx:1, cy:1, angle:0, stop:0 rgba(0, 131, 214, 255), stop:0.0397727 rgba(54, 156, 228, 255), stop:0.965909 rgba(173, 255, 207, 255), stop:0.971591 rgba(149, 255, 200, 255), stop:1 rgba(255, 255, 255, 255));</string>
   </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
@@ -24,8 +27,12 @@
    </property>
    <property name="font">
     <font>
+     <family>Dubai Medium</family>
      <pointsize>15</pointsize>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: None;</string>
    </property>
    <property name="text">
     <string>Имя</string>
@@ -42,8 +49,12 @@
    </property>
    <property name="font">
     <font>
+     <family>Dubai Medium</family>
      <pointsize>15</pointsize>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: None;</string>
    </property>
    <property name="text">
     <string>Логин</string>
@@ -60,8 +71,12 @@
    </property>
    <property name="font">
     <font>
+     <family>Dubai Medium</family>
      <pointsize>15</pointsize>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: None;</string>
    </property>
    <property name="text">
     <string>Пароль</string>
@@ -78,8 +93,12 @@
    </property>
    <property name="font">
     <font>
+     <family>Dubai Medium</family>
      <pointsize>15</pointsize>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: None;</string>
    </property>
    <property name="text">
     <string>Город</string>
@@ -89,10 +108,15 @@
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>150</y>
+     <y>141</y>
      <width>261</width>
-     <height>22</height>
+     <height>31</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+    </font>
    </property>
    <property name="editable">
     <bool>true</bool>
@@ -107,6 +131,11 @@
      <height>31</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
    </property>
@@ -119,6 +148,11 @@
      <width>261</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+    </font>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -133,11 +167,16 @@
      <height>31</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="save">
    <property name="geometry">
     <rect>
      <x>80</x>
@@ -146,11 +185,25 @@
      <height>41</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>Dubai Medium</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+color: rgb(0, 0, 0);
+border-radius: 15px;
+border-style: outset;
+border-width: 1.5px;
+}</string>
+   </property>
    <property name="text">
     <string>Сохранить</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QPushButton" name="exit">
    <property name="geometry">
     <rect>
      <x>250</x>
@@ -158,6 +211,20 @@
      <width>101</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Dubai Medium</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+color: rgb(0, 0, 0);
+border-radius: 15px;
+border-style: outset;
+border-width: 1.5px;
+}</string>
    </property>
    <property name="text">
     <string>Назад</string>

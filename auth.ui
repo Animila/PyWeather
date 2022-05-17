@@ -13,12 +13,15 @@
   <property name="windowTitle">
    <string>Авторизация</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qconicalgradient(cx:1, cy:1, angle:0, stop:0 rgba(0, 131, 214, 255), stop:0.0397727 rgba(54, 156, 228, 255), stop:0.965909 rgba(173, 255, 207, 255), stop:0.971591 rgba(149, 255, 200, 255), stop:1 rgba(255, 255, 255, 255));</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>20</y>
+      <y>10</y>
       <width>381</width>
       <height>51</height>
      </rect>
@@ -31,8 +34,12 @@
     </property>
     <property name="font">
      <font>
+      <family>Dubai Medium</family>
       <pointsize>20</pointsize>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: None;</string>
     </property>
     <property name="text">
      <string>Войти</string>
@@ -50,6 +57,11 @@
       <height>41</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
    </widget>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
@@ -62,8 +74,12 @@
     </property>
     <property name="font">
      <font>
+      <family>Dubai Medium</family>
       <pointsize>20</pointsize>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: None;</string>
     </property>
     <property name="text">
      <string>Логин</string>
@@ -78,6 +94,11 @@
       <height>41</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
    </widget>
    <widget class="QLabel" name="label_3">
     <property name="geometry">
@@ -90,8 +111,12 @@
     </property>
     <property name="font">
      <font>
+      <family>Dubai Medium</family>
       <pointsize>20</pointsize>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: None;</string>
     </property>
     <property name="text">
      <string>Пароль</string>
@@ -106,6 +131,20 @@
       <height>41</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Dubai Medium</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+color: rgb(0, 0, 0);
+border-radius: 15px;
+border-style: outset;
+border-width: 1.5px;
+}</string>
+    </property>
     <property name="text">
      <string>Войти</string>
     </property>
@@ -116,11 +155,25 @@
       <x>110</x>
       <y>170</y>
       <width>181</width>
-      <height>23</height>
+      <height>41</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Dubai Medium</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+color: rgb(0, 0, 0);
+border-radius: 9px;
+border-style: outset;
+border-width: 1.5px;
+}</string>
+    </property>
     <property name="text">
-     <string>Если не зарегистрировались</string>
+     <string>Регистрация</string>
     </property>
    </widget>
   </widget>

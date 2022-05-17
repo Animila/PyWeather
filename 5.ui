@@ -167,7 +167,7 @@ color: rgb(255, 255, 255);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>sun.png</pixmap>
+     <pixmap>image/01d.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="label">

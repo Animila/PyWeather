@@ -1,5 +1,5 @@
 from PyQt5.QtWidgets import QMainWindow, QApplication
-from PyQt5 import uic
+from PyQt5 import uic, QtCore
 import sys
 import json
 
@@ -26,6 +26,7 @@ class WeatherWindows(QMainWindow):
         uic.loadUi('5.ui', self)
 
         self.data = getWeather(data['city'])
+        self.action.triggered.connect(self.cab)
         self.setState()
 
     def setState(self):
@@ -36,6 +37,12 @@ class WeatherWindows(QMainWindow):
         self.weather.setText(self.data['descr'])
         self.week.setText(self.data['week'])
         self.day.setText(self.data['month'])
+
+    def cab(self):
+        self.hide()
+        print(self.data)
+        self.cabinet = Cabinet(self.data)
+        self.cabinet.show()
 
 
 class Authenticate(QMainWindow):
@@ -60,8 +67,6 @@ class Authenticate(QMainWindow):
             else:
                 print(data['error'])
 
-
-
     def register(self):
         """окно регистрации"""
         self.hide()
@@ -81,9 +86,9 @@ class Register(QMainWindow):
         login = self.login.toPlainText()
         password = self.password.toPlainText()
         name = self.name.toPlainText()
-        # city = self.comboBox.activated[str].connect()
+        city = self.comboBox.currentText()
 
-        if account.create(login, password, name, 'Якутск'):
+        if account.create(login, password, name, city):
             self.auth()
 
     def auth(self):
@@ -92,6 +97,21 @@ class Register(QMainWindow):
         self.login.setFixedSize(382, 274)
         self.login.show()
 
+
+class Cabinet(QMainWindow):
+    def __init__(self, data):
+        super().__init__()
+        self.data = data
+        uic.loadUi("cabinet.ui", self)
+        self.setData()
+
+    def setData(self):
+        self.name.setText(self.data['name'])
+        self.login.setText(self.data['login'])
+        self.password.setText(self.data['password'])
+        self.city.addItems(getCity())
+        index = self.city.findText('Якутск')
+        self.city.setCurrentIndex(index)
 
 def application():
     """Само приложение"""

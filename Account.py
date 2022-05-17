@@ -25,7 +25,8 @@ class Account:
                     'id': result[0],
                     'login': result[1],
                     'name': result[2],
-                    'city': result[3]
+                    'city': result[3],
+                    'password': result[4]
                     }
         else:
             data = {

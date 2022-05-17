@@ -192,59 +192,56 @@ color: rgb(255, 255, 255);</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QPushButton" name="save">
+  <widget class="QSplitter" name="splitter">
    <property name="geometry">
     <rect>
      <x>80</x>
      <y>220</y>
-     <width>101</width>
+     <width>301</width>
      <height>41</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <family>Dubai Medium</family>
-     <pointsize>10</pointsize>
-    </font>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
    </property>
-   <property name="styleSheet">
-    <string notr="true">QPushButton {
+   <widget class="QPushButton" name="save">
+    <property name="font">
+     <font>
+      <family>Dubai Medium</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
 color: rgb(0, 0, 0);
 border-radius: 15px;
 border-style: outset;
 border-width: 1.5px;
 }</string>
-   </property>
-   <property name="text">
-    <string>Сохранить</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="exit">
-   <property name="geometry">
-    <rect>
-     <x>250</x>
-     <y>220</y>
-     <width>101</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Dubai Medium</family>
-     <pointsize>10</pointsize>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QPushButton {
+    </property>
+    <property name="text">
+     <string>Сохранить</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="exit">
+    <property name="font">
+     <font>
+      <family>Dubai Medium</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
 color: rgb(0, 0, 0);
 border-radius: 15px;
 border-style: outset;
 border-width: 1.5px;
 }</string>
-   </property>
-   <property name="text">
-    <string>Назад</string>
-   </property>
+    </property>
+    <property name="text">
+     <string>Назад</string>
+    </property>
+   </widget>
   </widget>
  </widget>
  <resources/>

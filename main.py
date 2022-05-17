@@ -1,5 +1,5 @@
 from PyQt5.QtWidgets import QMainWindow, QApplication, QMessageBox
-from PyQt5 import uic, QtCore
+from PyQt5 import uic
 import sys
 import json
 

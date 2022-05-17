@@ -287,6 +287,8 @@ border-width: 1.5px;
    </property>
   </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="bg.qrc"/>
+ </resources>
  <connections/>
 </ui>

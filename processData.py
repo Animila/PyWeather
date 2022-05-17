@@ -1,6 +1,5 @@
-import requests
-from pprint import pprint
 from datetime import datetime
+import requests
 
 from setting import api_key
 

@@ -156,7 +156,8 @@ border-color: rgb(46, 113, 141);
 border-radius: 15px;
 border-style: outset;
 border-width: 1.5px;
-}</string>
+}
+background-color: None;</string>
      </property>
      <property name="text">
       <string>Войти</string>
@@ -175,7 +176,8 @@ border-color: rgb(46, 113, 141);
 border-radius: 9px;
 border-style: outset;
 border-width: 1.5px;
-}</string>
+}
+background-color: None;</string>
      </property>
      <property name="text">
       <string>Регистрация</string>

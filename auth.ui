@@ -123,6 +123,9 @@ border-style: outset;
 border-width: 1.5px;
 background-color: rgb(255, 255, 255);</string>
     </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
    </widget>
    <widget class="QLineEdit" name="password">
     <property name="geometry">
@@ -145,6 +148,9 @@ border-radius: 13px;
 border-style: outset;
 border-width: 1.5px;
 background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
    <widget class="QPushButton" name="reg">

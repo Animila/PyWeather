@@ -168,10 +168,23 @@ background-color: rgb(255, 255, 255);</string>
       <pointsize>10</pointsize>
      </font>
     </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
 border-color: rgb(46, 113, 141);
 border-radius: 9px;
+border-style: outset;
+border-width: 1.5px;
+}
+QPushButton:hover{
+background-color: rgb(85, 167, 202);
+}
+QPushButton:pressed {
+background-color: rgb(67, 138, 185);
+border-color: rgb(46, 113, 141);
+border-radius: 15px;
 border-style: outset;
 border-width: 1.5px;
 }
@@ -196,9 +209,22 @@ background-color: None;</string>
       <pointsize>10</pointsize>
      </font>
     </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
 	color: rgb(255, 255, 255);
+border-color: rgb(46, 113, 141);
+border-radius: 15px;
+border-style: outset;
+border-width: 1.5px;
+}
+QPushButton:hover{
+background-color: rgb(85, 167, 202);
+}
+QPushButton:pressed {
+background-color: rgb(67, 138, 185);
 border-color: rgb(46, 113, 141);
 border-radius: 15px;
 border-style: outset;

@@ -118,7 +118,7 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
-color: rgb(0, 0, 0);
+border-color: rgb(46, 113, 141);
 border-radius: 15px;
 border-style: outset;
 border-width: 1.5px;
@@ -139,7 +139,7 @@ border-width: 1.5px;
     </property>
     <property name="font">
      <font>
-      <pointsize>20</pointsize>
+      <pointsize>15</pointsize>
      </font>
     </property>
     <property name="editable">
@@ -215,7 +215,7 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
-color: rgb(0, 0, 0);
+border-color: rgb(46, 113, 141);
 border-radius: 15px;
 border-style: outset;
 border-width: 1.5px;
@@ -234,6 +234,11 @@ border-width: 1.5px;
       <height>41</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
    </widget>
    <widget class="QLineEdit" name="password">
     <property name="geometry">
@@ -243,6 +248,11 @@ border-width: 1.5px;
       <width>261</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
     </property>
    </widget>
    <widget class="QLineEdit" name="name">

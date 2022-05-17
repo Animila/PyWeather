@@ -213,7 +213,7 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
-color: rgb(0, 0, 0);
+border-color: rgb(46, 113, 141);
 border-radius: 15px;
 border-style: outset;
 border-width: 1.5px;
@@ -232,7 +232,7 @@ border-width: 1.5px;
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
-color: rgb(0, 0, 0);
+border-color: rgb(46, 113, 141);
 border-radius: 15px;
 border-style: outset;
 border-width: 1.5px;

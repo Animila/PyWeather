@@ -110,6 +110,11 @@ color: rgb(255, 255, 255);</string>
       <height>41</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
    </widget>
    <widget class="QLineEdit" name="password">
     <property name="geometry">
@@ -119,6 +124,11 @@ color: rgb(255, 255, 255);</string>
       <width>261</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
     </property>
    </widget>
    <widget class="QSplitter" name="splitter">
@@ -142,7 +152,7 @@ color: rgb(255, 255, 255);</string>
      </property>
      <property name="styleSheet">
       <string notr="true">QPushButton {
-color: rgb(0, 0, 0);
+border-color: rgb(46, 113, 141);
 border-radius: 15px;
 border-style: outset;
 border-width: 1.5px;
@@ -161,7 +171,7 @@ border-width: 1.5px;
      </property>
      <property name="styleSheet">
       <string notr="true">QPushButton {
-color: rgb(0, 0, 0);
+border-color: rgb(46, 113, 141);
 border-radius: 9px;
 border-style: outset;
 border-width: 1.5px;

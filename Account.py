@@ -1,12 +1,24 @@
 import sqlite3
-
+import sys
+import os
 from PyQt5.QtWidgets import QMessageBox
 
+'''
+CREATE TABLE "account" (
+	"id"	INTEGER UNIQUE,
+	"user"	TEXT UNIQUE,
+	"name"	TEXT,
+	"city"	TEXT,
+	"password"	TEXT,
+	PRIMARY KEY("id" AUTOINCREMENT)
+);
+'''
 
 class Account:
     def __init__(self):
+        path = resource_path(os.path.join('files', 'pyweather.db'))
         try:
-            self.connect = sqlite3.connect("files/pyweather.db")
+            self.connect = sqlite3.connect(path)
         except sqlite3.Error as error:
             message('Ошибка', f'Ошибка подключения к SQL\nОшибка: {error}')
 
@@ -67,6 +79,12 @@ class Account:
             message('Успех', 'Все изменения сохранены')
             self.connect.commit()
             return True
+
+
+def resource_path(relative):
+    if hasattr(sys, "_MEIPASS"):
+        return os.path.join(sys._MEIPASS, relative)
+    return os.path.join(relative)
 
 
 def message(title, text):

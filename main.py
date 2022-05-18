@@ -1,18 +1,23 @@
 from PyQt5.QtWidgets import QMainWindow, QApplication, QMessageBox
 from PyQt5 import uic
 import sys
+import os
 import json
+
 
 from Account import Account
 from processData import getWeather
 
+app = QApplication([])
 account = Account()
+
 
 
 def getCity():
     """Получаем список городов"""
     list_city = []
-    with open('files/russian-cities.json', encoding='utf-8', mode='r') as f:
+    path = resource_path(os.path.join('files', 'russian-cities.json'))
+    with open(path, encoding='utf-8', mode='r') as f:
         templates = json.load(f)
     for i in templates:
         list_city.append(i['name'])
@@ -23,7 +28,8 @@ class WeatherWindows(QMainWindow):
     """Окно погоды"""
     def __init__(self, id):
         super().__init__()
-        uic.loadUi('designer/5.ui', self)
+        path = resource_path(os.path.join('design', '5.ui'))
+        uic.loadUi(path, self)
         self.id_user = id
         self.user_data = account.getData(id)
         self.data = getWeather(self.user_data['city'])
@@ -55,7 +61,8 @@ class WeatherWindows(QMainWindow):
 class Authenticate(QMainWindow):
     def __init__(self):
         super().__init__()
-        uic.loadUi('designer/auth.ui', self)
+        path = resource_path(os.path.join('design', 'auth.ui'))
+        uic.loadUi(path, self)
         self.check.clicked.connect(self.getUser)
         self.reg.clicked.connect(self.register)
 
@@ -82,7 +89,8 @@ class Authenticate(QMainWindow):
 class Register(QMainWindow):
     def __init__(self):
         super().__init__()
-        uic.loadUi('designer/register.ui', self)
+        path = resource_path(os.path.join('design', 'register.ui'))
+        uic.loadUi(path, self)
         self.interface()
 
     def interface(self):
@@ -112,7 +120,8 @@ class Register(QMainWindow):
 class Cabinet(QMainWindow):
     def __init__(self, id):
         super().__init__()
-        uic.loadUi("designer/cabinet.ui", self)
+        path = resource_path(os.path.join('design', 'cabinet.ui'))
+        uic.loadUi(path, self)
         self.data = account.getData(id)
         self.interface()
 
@@ -125,7 +134,6 @@ class Cabinet(QMainWindow):
         self.weather = WeatherWindows(self.data['id'])
         self.weather.show()
         self.hide()
-
 
     def setData(self):
         self.name.setText(self.data['name'])
@@ -155,14 +163,12 @@ def message(title, text):
     msg.setIcon(QMessageBox.Warning)
     msg.exec_()
 
+def resource_path(relative):
+    if hasattr(sys, "_MEIPASS"):
+        return os.path.join(sys._MEIPASS, relative)
+    return os.path.join(relative)
 
-def application():
-    """Само приложение"""
-    app = QApplication(sys.argv)
+if __name__ == "__main__":
     login = Authenticate()
     login.show()
     sys.exit(app.exec_())
-
-
-if __name__ == "__main__":
-    application()

@@ -7,14 +7,14 @@
     <x>0</x>
     <y>0</y>
     <width>708</width>
-    <height>506</height>
+    <height>510</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: qconicalgradient(cx:1, cy:1, angle:0, stop:0 rgba(0, 131, 214, 255), stop:0.0397727 rgba(54, 156, 228, 255), stop:0.965909 rgba(173, 255, 207, 255), stop:0.971591 rgba(149, 255, 200, 255), stop:1 rgba(255, 255, 255, 255));</string>
+   <string notr="true">background-color: qlineargradient(spread:repeat, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(83, 126, 167, 255), stop:0.306818 rgba(91, 146, 174, 255), stop:0.596591 rgba(92, 155, 180, 255), stop:1 rgba(77, 129, 165, 255));</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="week">
@@ -46,7 +46,7 @@
     <property name="geometry">
      <rect>
       <x>90</x>
-      <y>330</y>
+      <y>310</y>
       <width>191</width>
       <height>61</height>
      </rect>
@@ -130,7 +130,7 @@ border-radius: 18px;</string>
     <property name="geometry">
      <rect>
       <x>90</x>
-      <y>240</y>
+      <y>220</y>
       <width>191</width>
       <height>91</height>
      </rect>
@@ -209,7 +209,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>130</x>
-      <y>410</y>
+      <y>390</y>
       <width>111</width>
       <height>41</height>
      </rect>

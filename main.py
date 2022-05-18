@@ -1,16 +1,17 @@
+# для интерфейса
 from PyQt5.QtWidgets import QMainWindow, QApplication, QMessageBox
 from PyQt5 import uic
+# для прочих систем
 import sys
 import os
 import json
-
-
+# импорт других файлов
 from Account import Account
 from processData import getWeather
 
+# для конвертации файла в exe
 app = QApplication([])
 account = Account()
-
 
 
 def getCity():
@@ -163,10 +164,12 @@ def message(title, text):
     msg.setIcon(QMessageBox.Warning)
     msg.exec_()
 
+
 def resource_path(relative):
     if hasattr(sys, "_MEIPASS"):
         return os.path.join(sys._MEIPASS, relative)
     return os.path.join(relative)
+
 
 if __name__ == "__main__":
     login = Authenticate()

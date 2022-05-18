@@ -224,167 +224,231 @@ color: rgb(255, 255, 255);</string>
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QLabel" name="davlenie">
     <property name="geometry">
      <rect>
-      <x>320</x>
-      <y>170</y>
-      <width>321</width>
-      <height>321</height>
+      <x>360</x>
+      <y>183</y>
+      <width>111</width>
+      <height>61</height>
      </rect>
     </property>
-    <layout class="QGridLayout" name="gridLayout">
-     <item row="1" column="2">
-      <widget class="QLabel" name="oblachnost">
-       <property name="font">
-        <font>
-         <family>Dubai Medium</family>
-         <pointsize>13</pointsize>
-         <underline>false</underline>
-         <strikeout>false</strikeout>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: None;
+    <property name="font">
+     <font>
+      <family>Dubai Medium</family>
+      <pointsize>13</pointsize>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: None;
 color: rgb(255, 255, 255);</string>
-       </property>
-       <property name="text">
-        <string>20%</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="wordWrap">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="0" colspan="2">
-      <widget class="QLabel" name="davlenie">
-       <property name="font">
-        <font>
-         <family>Dubai Medium</family>
-         <pointsize>13</pointsize>
-         <underline>false</underline>
-         <strikeout>false</strikeout>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: None;
+    </property>
+    <property name="text">
+     <string>500Гпа</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="vlazhnost">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>183</y>
+      <width>121</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Dubai Medium</family>
+      <pointsize>13</pointsize>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: None;
 color: rgb(255, 255, 255);</string>
-       </property>
-       <property name="text">
-        <string>500Гпа</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="wordWrap">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="2">
-      <widget class="QLabel" name="vlazhnost">
-       <property name="font">
-        <font>
-         <family>Dubai Medium</family>
-         <pointsize>13</pointsize>
-         <underline>false</underline>
-         <strikeout>false</strikeout>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: None;
+    </property>
+    <property name="text">
+     <string>70%</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="v_vetra">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>343</y>
+      <width>111</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Dubai Medium</family>
+      <pointsize>13</pointsize>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: None;
 color: rgb(255, 255, 255);</string>
-       </property>
-       <property name="text">
-        <string>70%</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="wordWrap">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="0" colspan="2">
-      <widget class="QLabel" name="v_vetra">
-       <property name="font">
-        <font>
-         <family>Dubai Medium</family>
-         <pointsize>13</pointsize>
-         <underline>false</underline>
-         <strikeout>false</strikeout>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: None;
+    </property>
+    <property name="text">
+     <string>2 м/с</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="n_vetra">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>343</y>
+      <width>121</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Dubai Medium</family>
+      <pointsize>13</pointsize>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: None;
 color: rgb(255, 255, 255);</string>
-       </property>
-       <property name="text">
-        <string>2 м/с</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="wordWrap">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="2">
-      <widget class="QLabel" name="n_vetra">
-       <property name="font">
-        <font>
-         <family>Dubai Medium</family>
-         <pointsize>13</pointsize>
-         <underline>false</underline>
-         <strikeout>false</strikeout>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: None;
+    </property>
+    <property name="text">
+     <string>градусы</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="p_vetra">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>263</y>
+      <width>111</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Dubai Medium</family>
+      <pointsize>13</pointsize>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: None;
 color: rgb(255, 255, 255);</string>
-       </property>
-       <property name="text">
-        <string>градусы</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="wordWrap">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="0" colspan="2">
-      <widget class="QLabel" name="p_vetra">
-       <property name="font">
-        <font>
-         <family>Dubai Medium</family>
-         <pointsize>13</pointsize>
-         <underline>false</underline>
-         <strikeout>false</strikeout>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: None;
+    </property>
+    <property name="text">
+     <string>3 м/с</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="oblachnost">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>260</y>
+      <width>121</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Dubai Medium</family>
+      <pointsize>13</pointsize>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: None;
 color: rgb(255, 255, 255);</string>
-       </property>
-       <property name="text">
-        <string>3 м/с</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="wordWrap">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-    </layout>
+    </property>
+    <property name="text">
+     <string>20%</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="exit">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>450</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Dubai Medium</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+border-color: rgb(46, 113, 141);
+border-radius: 15px;
+border-style: outset;
+border-width: 1.5px;
+}
+QPushButton:hover{
+background-color: rgb(85, 167, 202);
+}
+QPushButton:pressed {
+background-color: rgb(67, 138, 185);
+border-color: rgb(46, 113, 141);
+border-radius: 15px;
+border-style: outset;
+border-width: 1.5px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Назад</string>
+    </property>
    </widget>
   </widget>
  </widget>

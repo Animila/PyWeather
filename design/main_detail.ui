@@ -144,6 +144,9 @@ border-radius: 18px;</string>
     <property name="pixmap">
      <pixmap>../image/01d.png</pixmap>
     </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QLabel" name="gradus">
     <property name="geometry">
@@ -467,6 +470,8 @@ border-radius: 18px;</string>
    </widget>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="../image/readme/фон.qrc"/>
+ </resources>
  <connections/>
 </ui>

@@ -45,12 +45,43 @@ def getApi(city):
             return api_result
 
 
+api_results = {
+            "name": 'Якутск',
+            "weather": [
+                {
+                  "id": 800,
+                  "main": "snow",
+                  "description": "clear sky",
+                  "icon": "01d"
+                }
+              ],
+            'main': {
+                'temp': 12,
+                'humidity': 99,
+                'pressure': 23,
+            },
+            'wind': {'speed': 1,
+                    'deg': 230,
+                     },
+            'clouds': {'all': 0},
+            "sys": {
+                "type": 1,
+                "id": 5122,
+                "message": 0.0139,
+                "country": "RU",
+                "sunrise": 1560343627,
+                "sunset": 1560396563
+            },
+}
+
 
 def getWeather(city):
-    api_result = getApi(city)
+    # api_result = getApi(city)
+    api_result = api_results
     """Парсинг данных"""
     data = {
             'city': api_result["name"],
+            'main': api_result['weather'][0]['main'],
             'image': api_result['weather'][0]['icon'],
             'descr': api_result['weather'][0]['description'],
             'temp': round(api_result['main']['temp']),

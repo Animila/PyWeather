@@ -25,18 +25,58 @@ def getCity():
     return list_city
 
 
+class WeatherDetail(QMainWindow):
+    def __init__(self, id):
+        super().__init__()
+        path = resource_path(os.path.join('design', 'main_detail.ui'))
+        uic.loadUi(path, self)
+
+        self.id_user = id
+        self.exit.clicked.connect(self.openMain)
+        self.user_data = account.getData(self.id_user)
+        self.data = getWeather(self.user_data['city'])
+        self.setState()
+
+    def openMain(self):
+        self.hide()
+        self.weather = WeatherWindows(self.id_user)
+        self.weather.show()
+
+    def setState(self):
+        """Отображение полученных данных"""
+        self.time.setText(self.data['time'])
+        self.gradus.setText(f"{str(self.data['temp'])}°C")
+        self.gorod.setText(self.data['city'])
+        self.weather.setText(self.data['descr'])
+        self.week.setText(self.data['week'])
+        self.day.setText(self.data['month'])
+        self.davlenie.setText(f"Давление:\n {self.data['pressure']} гПа")
+        self.vlazhnost.setText(f"Влажность:\n {self.data['humidity']}%")
+        text = ['↑', '↗', '→', '↘', '↓', '↙', '←', '↖']
+        self.p_vetra.setText(f"Порыв ветра:\n {self.data['gust']} м/с")
+        self.v_vetra.setText(f"Скорость:\n {self.data['speed_wind']} м/с")
+        self.n_vetra.setText(f"Направление:\n {text[self.data['deg']]}")
+        self.oblachnost.setText(f"Облачность:\n {self.data['cloud']}%")
+
+
 class WeatherWindows(QMainWindow):
     """Окно погоды"""
     def __init__(self, id):
         super().__init__()
-        path = resource_path(os.path.join('design', '5.ui'))
+        path = resource_path(os.path.join('design', 'main.ui'))
         uic.loadUi(path, self)
         self.id_user = id
         self.user_data = account.getData(id)
         self.data = getWeather(self.user_data['city'])
         self.menuRef.triggered.connect(self.cab)
         self.menuExit.triggered.connect(self.authWindows)
+        self.exit.clicked.connect(self.openDetail)
         self.setState()
+
+    def openDetail(self):
+        self.hide()
+        self.detail = WeatherDetail(self.id_user)
+        self.detail.show()
 
     def setState(self):
         """Отображение полученных данных"""

@@ -333,7 +333,7 @@ color: rgb(0, 0, 0);</string>
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>../image/Py (1).png</pixmap>
+    <pixmap>../image/logo.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>

@@ -1,5 +1,6 @@
 # PyWeather
 Погодное приложение на Python
+> Авторы: Разработка - Илья Христофоров, Дизайн - Алина Портнягина
 
 ![Логотип](https://github.com/Animila/PyWeather/blob/main/image/readme/Py.png?raw=true)
 
@@ -9,16 +10,16 @@
 # Возможности 
 - Парсинг данных из api.openweathermap.org
 - Реализация системы авторизации, регистрации и личного кабинета
-- 
+- Подстраивание интерфейса под погодные условия
 
-Главный экран:
-<br>
+## Главный экран:
+
 ![Главный](https://github.com/Animila/PyWeather/blob/main/image/readme/main.png?raw=true)
 <br>
 
-Окно авторизации:
-<br>
-![Авторизация](https://github.com/Animila/PyWeather/blob/main/image/readme/login.png?raw=true)
+## Окно авторизации и регистрации:
 
-> Авторы: Разработка - Илья Христофоров, Дизайн - Алина Портнягина
+![Авторизация](https://github.com/Animila/PyWeather/blob/main/image/readme/login.png?raw=true)
+![Регистрация](https://github.com/Animila/PyWeather/blob/main/image/readme/pass.png?raw=true)
+
 

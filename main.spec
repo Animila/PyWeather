@@ -53,7 +53,7 @@ exe = EXE(
     upx=True,
     upx_exclude=[],
     runtime_tmpdir=None,
-    console=False,
+    console=False, icon='image/logo.ico',
     disable_windowed_traceback=False,
     argv_emulation=False,
     target_arch=None,

@@ -29,6 +29,46 @@ month = {
     '12': 'декабрь',
 }
 
+testBase = {
+    "coord": {
+        "lon": 129.7331,
+        "lat": 62.0339
+    },
+    "weather": [{
+        "id": 800,
+        "main": "Clear",
+        "description": "ясно",
+        "icon": "01d"
+    }],
+    "base": "stations",
+    "main": {
+        "temp": 8.98,
+        "feels_like": 8,
+        "temp_min": 8.98,
+        "temp_max": 8.98,
+        "pressure": 1008,
+        "humidity": 66
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 2,
+        "deg": 100
+    },
+    "clouds": {"all": 0},
+    "dt": 1653097927,
+    "sys": {
+        "type": 1,
+        "id": 8854,
+        "country": "RU",
+        "sunrise": 1653070370,
+        "sunset": 1653135763
+    },
+    "timezone": 32400,
+    "id": 2013159,
+    "name": "Якутск",
+    "cod": 200
+}
+
 
 def getApi(city):
     """Получение данных погоды"""
@@ -38,46 +78,17 @@ def getApi(city):
         api_result = requests.get(url, params=parameters).json()
     except requests.ConnectionError:
         messages('Ошибка', f"Ошибка подключения к серверу", 'Соединение прервано', 'Проверьте свое интернет соединение')
+        return testBase
     else:
         if api_result['cod'] != 200:
             messages('Ошибка', f"Сбой работы программы", 'Ошибка на стороне сервера', api_result['message'])
+            return testBase
         else:
             return api_result
 
 
-api_results = {
-            "name": 'Якутск',
-            "weather": [
-                {
-                  "id": 800,
-                  "main": "snow",
-                  "description": "clear sky",
-                  "icon": "01d"
-                }
-              ],
-            'main': {
-                'temp': 12,
-                'humidity': 99,
-                'pressure': 23,
-            },
-            'wind': {'speed': 1,
-                    'deg': 230,
-                     },
-            'clouds': {'all': 0},
-            "sys": {
-                "type": 1,
-                "id": 5122,
-                "message": 0.0139,
-                "country": "RU",
-                "sunrise": 1560343627,
-                "sunset": 1560396563
-            },
-}
-
-
 def getWeather(city):
-    # api_result = getApi(city)
-    api_result = api_results
+    api_result = getApi(city)
     """Парсинг данных"""
     data = {
             'city': api_result["name"],

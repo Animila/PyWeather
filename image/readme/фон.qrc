@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="newPrefix">
-    <file>Новый проект.jpg</file>
-    <file>Новый проект (1).jpg</file>
-  </qresource>
-</RCC>
